@@ -2,9 +2,8 @@ package com.ikh.demo.controller;
 
 import com.ikh.demo.model.User;
 import com.ikh.demo.service.UserService;
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import org.springframework.boot.autoconfigure.cassandra.CassandraProperties;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,7 +11,9 @@ import java.util.Optional;
 
 @RestController
 @Data
+@AllArgsConstructor
 public class UserController {
+
     final UserService userService;
 
     @GetMapping("/users")

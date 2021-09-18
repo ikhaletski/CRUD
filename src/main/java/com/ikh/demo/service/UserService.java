@@ -1,13 +1,13 @@
 package com.ikh.demo.service;
 
 import com.ikh.demo.model.User;
-import com.ikh.demo.reposytory.UserRepository;
-import lombok.Data;
+import com.ikh.demo.repository.UserRepository;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Data
+@AllArgsConstructor
 @Service
 public class UserService {
 
